@@ -50,6 +50,7 @@ article h2 {
   /* タブレット用のスタイル */
   #main {
     position: relative;
+    min-height: 500px;
     height: 100vh;
   }
 
