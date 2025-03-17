@@ -193,6 +193,14 @@ figure{
 	color: white;
 }
 
+/*PHP*/
+.cate-ico.php{
+	background-color:  #4f5b93;
+	padding:  4px;
+	color: white;
+}
+
+
 /*フッター*/
 footer{
 	position: relative;
