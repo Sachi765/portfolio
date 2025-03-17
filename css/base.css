@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color :#333333;
+	font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+	font-size: 1.4rem;
+	float: left;
+}
+
+/*初期化*/
+a {
+	color: #4297ff;
+}
+a:link{
+	text-decoration:  none;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+p{
+	margin: 0;
+}
+
+figure{
+	margin: 0;
+}
+/*ナビゲーション*/
+.drawer-hamburger{
+	width: 3rem !important;
+}
+
+.drawer-nav{
+	background-color: rgba(0,0,0,0.7) !important;
+	color: white !important;
+	text-align: center;
+}
+
+.drawer-nav li{
+		border-bottom: 1px solid white;
+}
+
+.drawer-brand,
+.drawer-menu-item{
+	color: white !important;
+	text-align: center;
+}
+
+.drawer-brand{
+	font-size: 1.8rem !important;
+}
+
+.drawer-menu-item{
+	font-size: 1.4rem !important;
+	transition: 0.5s all;
+}
+
+.drawer-menu-item:hover{
+	background-color: white !important;
+	color: #666666 !important;
+}
+
+/*arrow*/
+.scroll-bottom{
+    -webkit-animation:scroll 1s infinite linear;
+    animation:scroll 1s infinite linear;
+		text-align:center;
+		width: 20px;
+		height: 20px;
+		margin: 1vh auto;
+}
+
+@keyframes scroll{
+	0%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(10px);
+	}
+}
+
+.arrow-bottom{
+	position: relative;
+	display: block;
+}
+
+.arrow-bottom::before{
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-right: 2px solid #333;
+		border-bottom: 2px solid #333;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+}
+
+.arrow-bottom-w::before{
+	border-color: white;
+}
+
+.scroll-top{
+	position: fixed;
+	z-index: 1;
+	right: 20px;
+	bottom: 20px;
+	width:30px;
+	height: 30px;
+	padding: 15px 0 0 15px;
+	border: 1px solid #999;
+	background-color: white;
+	transform: rotate(45deg) !important;
+}
+
+.scroll-top:hover,
+.scroll-top:active{
+		background-color: #999;
+}
+
+.scroll-top:hover:before{
+	border-color: white;
+}
+
+.scroll-top::before{
+		content: '';
+		width: 15px;
+		height: 15px;
+		margin: 15px;
+		border-right: 2px solid #999;
+		border-bottom: 2px solid #999;
+		transform: rotate(180deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+}
+
+/* 画像 */
+.image-resize img{
+	width: 100%;
+}
+
+/*カテゴリーアイコン*/
+.cate-ico{
+	display:inline-block;
+	min-width: 70px;
+	text-align: center;
+	font-size: 12px;
+	padding: 3px 5px;
+	margin: 0 0 4px 8px;
+}
+
+/*Illustrator*/
+.cate-ico.ai{
+	color: orange;
+	background: #333333;
+	border: 2px solid orange;
+}
+
+/*WebSite*/
+.cate-ico.web{
+	color: white;
+	background: #333333;
+	border: 2px solid #00749a;
+}
+
+/*趣味*/
+.cate-ico.private{
+	background-color: #ff6a6a;
+	padding: 4px;
+	color: white;
+}
+
+/*職業訓練*/
+.cate-ico.school{
+	background-color:  #09ca8d;
+	padding:  4px;
+	color: white;
+}
+
+/*仕事*/
+.cate-ico.work{
+	background-color:  #4297ff;
+	padding:  4px;
+	color: white;
+}
+
+/*フッター*/
+footer{
+	position: relative;
+	height: 100vh;
+	text-align: center;
+	color: white;
+	background: #333333;
+}
+
+
+footer h2{
+	width: 240px;
+	padding-top: 10vh;
+	margin: 0 auto 8vh;
+	letter-spacing: 2px;
+	font-size: 3.5rem;
+	border-bottom: 1px solid #999;
+}
+
+footer address p{
+	margin: 3vh 0;
+	font-size: 1.4rem;
+}
+
+footer address .address-ico{
+	width: 320px;
+	margin: 8vh auto 10vh auto;
+}
+
+footer address .address-ico > div{
+	margin-bottom: 5vh;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+footer address .address-ico img{
+	border-radius: 50%;
+	padding: 4px;
+	margin-bottom: 4px;
+}
+
+footer address .address-ico .mail img{
+	background-color: #ff6a6a;
+}
+
+footer address .address-ico .facebook img{
+	background-color: #4297ff;
+}
+
+footer address .address-ico a{
+	color: white;
+}
+
+footer small{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 8px;
+	margin: auto;
+}
+
+/*color*/
+.col-pink{
+	color: #ff6a6a !important;
+}
+
+.col-green{
+	color: #09ca8d !important;
+}
+
+.col-blue{
+	color:#4297ff !important;
+}

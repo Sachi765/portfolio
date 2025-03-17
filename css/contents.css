@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+header h1{
+	width: 38px;
+	margin: 8px auto;
+}
+
+article h2.title{
+	width: 240px;
+	padding-top: 10vh;
+	margin: 0 auto 8vh;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 3.5rem;
+	border-bottom: 1px solid #999;
+}
+
+
+section{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#gallery{
+	margin: 0 auto 10vh auto;
+	width: 100%;
+	max-width: 640px;
+}
+
+.main-gallery{
+	max-width: 100%;
+}
+
+#gallery dl{
+	letter-spacing: 2px;
+	line-height: 2;
+	padding: 10px;
+}
+
+#gallery dt{
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+#gallery dd{
+	margin-bottom: 16px;
+}
+
+#gallery dd img{
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  /* タブレット用のスタイル */
+	#gallery dt{
+		margin-bottom: 4px;
+	}
+	#gallery dd{
+		margin-left: 0;
+	}
+	#gallery dd p{
+		padding-left: 6px;
+	}
+}
+@media screen and (min-width: 769px) {
+  /* PC用のスタイル */
+	#gallery dt{
+		float: left;
+		width: 20%;
+	}
+
+	#gallery dd{
+		margin-left: 25%;
+		padding: .5rem .5rem 0;
+	}
+
+	#gallery dd::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+#gallery .back-button{
+	display: block;
+	height: 35px;
+	margin: 8px;
+	color: #333;
+	border: 1px solid #333;
+	text-align: center;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+#gallery .back-button:hover{
+	color: white;
+	background-color: #333;
+	border: 1px solid #333;
+}
